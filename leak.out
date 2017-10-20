@@ -1,0 +1,12 @@
+O memAddr:   0x99bb60 memSize: 48 allocAddr:   0x4019f7 freeAddr:   0x401bad # memory overwritten beyond allocated 48 bytes
+# 4 byte beyond area:
+# 00 00 00 00 
+# abort; DUMP of current state
+# LeakReport
+# from new @ |      size  # Pointer Addr
+L   0x401a48           8  # 0x99bbe0
+L   0x401a0b          48  # 0x99bba0
+L   0x401a32           8  # 0x99cfc0
+L   0x401a3d           8  # 0x99be30
+# total allocation requests:      8 ; max. mem used 0 kBytes
+# leak     72 Bytes	:-(
